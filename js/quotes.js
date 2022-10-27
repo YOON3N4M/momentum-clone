@@ -54,11 +54,9 @@ function runQuotes() {
   const beforeFloor = Math.random() * quotes.length;
   const afterFloor = Math.floor(beforeFloor);
   const getArray = quotes[afterFloor];
-  const getQuote = getArray.quote;
-  const getAutor = getArray.author;
 
-  quote.innerText = getQuote;
-  author.innerText = getAutor;
+  quote.innerText = getArray.quote;
+  author.innerText = getArray.author;
 }
 
 runQuotes();
