@@ -24,7 +24,9 @@ function paintToDo(newTodo) {
   button.innerText = "❌";
   li.appendChild(span);
   li.appendChild(button);
+
   toDoList.appendChild(li);
+  button.classList.add("delButton");
   button.addEventListener("click", deleteToDo);
 }
 
