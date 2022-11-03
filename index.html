@@ -8,53 +8,47 @@
     <link rel="stylesheet" href="css\style.css" />
   </head>
   <body>
-    <div class="apps">
-      <div class="top-row">
-        <div class="top-left">
-          <!--검색창 자리 !-->
-        </div>
-        <div class="top-center"></div>
+    <div class="main-view">
+      <div class="apps">
+        <div class="top-bar"></div>
+        <div class="top-row">
+          <div class="top-left">
+            <span class="search">검색창</span>
+          </div>
+          <div class="top-center"></div>
 
-        <div class="top-right">
-          <div id="weather">
+          <div class="top-right">
+            <div id="weather">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="center-above"></div>
+        <div class="center">
+          <div>
+            <span id="clock"></span>
+          </div>
+          <div>
+            <span id="greeting"></span>
+          </div>
+        </div>
+        <div class="center-below"></div>
+        <div class="bottom-row">
+          <div>툴</div>
+          <div id="quote">
             <span></span>
             <span></span>
           </div>
+          <div>투두</div>
         </div>
       </div>
-      <div class="center-above"></div>
-      <div class="center"></div>
-      <div class="center-below"></div>
-      <div class="bottom-row"></div>
     </div>
-    <form class="hidden" id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <button>Log In</button>
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input required type="text" placeholder="write a To Do and Press Enter" />
-    </form>
-    <div id="todo-box" class="todo-box">
-      <ul id="todo-list"></ul>
-    </div>
-    <div id="quote">
-      <span> </span> <br />
-      <span> </span>
-    </div>
-
-    <script src="js\greetings.js"></script>
     <script src="js\clock.js"></script>
-    <script src="js\quotes.js"></script>
-    <script src="js\background.js"></script>
-    <script src="js\todo.js"></script>
     <script src="js\apiKey.js"></script>
     <script src="js\weather.js"></script>
+    <script src="js\greetings.js"></script>
+    <script src="js\quotes.js"></script>
+    <script src="js\background.js"></script>
   </body>
 </html>
